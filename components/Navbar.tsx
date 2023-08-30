@@ -4,9 +4,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-center bg-white px-5 py-7 shadow-md dark:bg-darkClr dark:shadow-white/5 xs:justify-between md:px-10 lg:px-36">
-      <h1 className="gradient -letter-spacing-[1px] cursor-pointer text-[20px] font-bold xs:text-[32px]">
+      <h3 className="gradient -letter-spacing-[1px] cursor-pointer text-[20px] font-bold xs:text-[32px]">
         Julian Piasecki
-      </h1>
+      </h3>
 
       <nav>
         <ul className="hidden gap-6 lg:flex">
