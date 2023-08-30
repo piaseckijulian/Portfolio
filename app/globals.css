@@ -2,26 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.gradient {
+  @apply bg-gradient bg-clip-text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.section-heading {
+  @apply text-[48px] font-bold text-headingClr dark:text-darkHeadingClr max-xs:text-center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.section-desc {
+  @apply text-xl text-grayish dark:text-darkGrayish max-xs:text-center;
+}
+
+.hero-wrapper {
+  @apply flex min-h-screen flex-col items-center pt-10 max-md:gap-5 lg:flex-row lg:items-start lg:justify-between lg:pt-36;
+}
+
+.hero-text {
+  @apply text-[34px] font-bold leading-tight -tracking-[1px] text-headingClr dark:text-darkHeadingClr max-lg:mb-2 max-lg:text-center xs:text-[48px] lg:text-[58px];
+}
+
+.about-desc {
+  @apply text-center text-lg font-light leading-tight text-grayish dark:text-darkGrayish xs:text-[28px] lg:max-w-[600px];
+}
+
+.footer-wrapper {
+  @apply flex flex-col items-center justify-between border-t-[3px] py-6 dark:border-t-[#42446E] xs:flex-row;
 }
