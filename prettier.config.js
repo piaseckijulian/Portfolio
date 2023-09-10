@@ -1,7 +1,7 @@
 module.exports = {
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
   singleQuote: true,
-  trailingComma: "none",
+  trailingComma: 'none',
   printWidth: 90,
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: ['prettier-plugin-tailwindcss']
 };

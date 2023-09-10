@@ -1,17 +1,17 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import { Footer, Navbar } from "@/components";
+import './globals.css';
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import { Footer, Navbar } from '@/components';
 
 const poppins = Poppins({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
+  weight: ['300', '400', '500', '700'],
+  subsets: ['latin']
 });
 
 export const metadata: Metadata = {
   title: "Julian Piasecki's Portfolio",
   description:
-    "This is Julian Piasecki's personal website when he showcases his projects and skills",
+    "This is Julian Piasecki's personal website when he showcases his projects and skills"
 };
 
 interface childrenInterface {

@@ -1,8 +1,8 @@
-import client, { urlFor } from "@/sanityClient";
-import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineLink } from "react-icons/ai";
-import { BsGithub } from "react-icons/bs";
+import client, { urlFor } from '@/sanityClient';
+import Image from 'next/image';
+import Link from 'next/link';
+import { AiOutlineLink } from 'react-icons/ai';
+import { BsGithub } from 'react-icons/bs';
 
 interface Props {
   src: any;
@@ -13,14 +13,7 @@ interface Props {
   liveSiteUrl: string;
 }
 
-const ProjectCard = ({
-  src,
-  title,
-  desc,
-  techStack,
-  liveSiteUrl,
-  githubUrl,
-}: Props) => (
+const ProjectCard = ({ src, title, desc, techStack, liveSiteUrl, githubUrl }: Props) => (
   <div className="rounded-xl py-2 shadow-lg dark:bg-[rgba(0,0,0,0.1)] dark:shadow-white/5">
     <Image
       src={urlFor(src).url()}
@@ -31,16 +24,14 @@ const ProjectCard = ({
     />
 
     <div className="px-4 pb-10 lg:px-7">
-      <h3 className="mt-5 text-center text-2xl font-medium dark:text-[#ccc]">
-        {title}
-      </h3>
+      <h3 className="mt-5 text-center text-2xl font-medium dark:text-[#ccc]">{title}</h3>
       <p className="mt-2 text-sm font-light text-grayish dark:text-darkGrayish lg:max-w-[315px] lg:text-lg">
         {desc}
       </p>
 
       <p className="mt-2 text-xs font-light text-headingClr dark:text-[#ccc]">
         <span className="text-sm font-normal">Tech stack: </span>
-        {techStack.join(", ")}
+        {techStack.join(', ')}
       </p>
 
       <div className="mt-4 justify-between lg:flex">
