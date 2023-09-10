@@ -36,7 +36,7 @@ const TechStack = async () => {
             },
           )
           .map(({ alt, image }: { alt: string; image: any }) => {
-            if (alt === "Next.js White") {
+            if (alt === "Next.js White" || alt === "Express.js White") {
               return (
                 <Image
                   src={urlFor(image).url()}
@@ -47,7 +47,7 @@ const TechStack = async () => {
                   key={alt}
                 />
               );
-            } else if (alt === "Next.js Black") {
+            } else if (alt === "Next.js Black" || alt === "Express.js Black") {
               return (
                 <Image
                   src={urlFor(image).url()}

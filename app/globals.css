@@ -24,7 +24,7 @@
 }
 
 .about-desc {
-  @apply text-center text-lg font-light leading-tight text-grayish dark:text-darkGrayish xs:text-[28px] lg:max-w-[600px];
+  @apply text-center text-lg leading-tight text-grayish dark:text-darkGrayish xs:text-[28px] lg:max-w-[600px];
 }
 
 .footer-wrapper {

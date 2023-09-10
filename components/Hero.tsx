@@ -12,7 +12,7 @@ const Hero = () => {
           Julian Piasecki
           <br />
         </span>
-        I'm a Front-End Dev
+        I'm a Full-Stack Dev
       </h1>
 
       <div className="rounded-full bg-gradient p-2">
