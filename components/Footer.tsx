@@ -10,12 +10,13 @@ const Footer = () => {
         </h3>
 
         <div className="flex items-center gap-6 max-xs:mt-4">
-          {footerLinks.map(({ href, icon: Icon }) => (
-            <Link href={href} key={href} target="_blank">
+          {footerLinks.map(({ title, href, icon: Icon }) => (
+            <Link href={href} key={href} target={title === 'Mail' ? '_self' : '_blank'}>
               <Icon
                 className="h-4 w-4 transition duration-500 ease-in-out
           hover:fill-purple-700 dark:fill-white xs:h-8 xs:w-8"
               />
+              <span className="text-[0px]">{title}</span>
             </Link>
           ))}
         </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
       <Link
         href="https://linkedin.com/"
         target="_blank"
-        className="rounded-full bg-violet-500 px-10 py-3 text-white transition duration-500 ease-in-out hover:bg-purple-700 max-xs:hidden md:text-lg"
+        className="rounded-full bg-violet-700 px-10 py-3 text-white transition duration-500 ease-in-out hover:bg-violet-900 max-xs:hidden md:text-lg"
       >
         Hire Me!
       </Link>
