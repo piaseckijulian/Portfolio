@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Julian Piasecki's Portfolio",
   description:
-    "This is Julian Piasecki's personal website when he showcases his projects and skills"
+    "This is Julian Piasecki's personal website where he showcases his projects and skills"
 };
 
 interface childrenInterface {

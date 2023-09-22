@@ -1,11 +1,11 @@
-import client, { urlFor } from '@/sanityClient';
+import client, { ImageInterface, urlFor } from '@/sanityClient';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineLink } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 
 interface Props {
-  src: any;
+  src: ImageInterface;
   title: string;
   desc: string;
   techStack: string[];
@@ -56,8 +56,8 @@ const ProjectCard = ({ src, title, desc, techStack, liveSiteUrl, githubUrl }: Pr
   </div>
 );
 
-interface projectInterface {
-  image: any;
+interface ProjectInterface {
+  image: ImageInterface;
   title: string;
   desc: string;
   tech_stack: string[];
@@ -74,7 +74,7 @@ const Projects = async () => {
       <p className="section-desc mb-10">My personal projects</p>
 
       <div className="grid grid-cols-1 gap-10 xs:grid-cols-2 md:grid-cols-3">
-        {projects.map((project: projectInterface) => (
+        {projects.map((project: ProjectInterface) => (
           <ProjectCard
             src={project.image}
             title={project.title}
