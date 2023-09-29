@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import client, { ImageInterface, urlFor } from '@/sanityClient';
+import Image from 'next/image';
 
 const TechStack = async () => {
   const order = await client.fetch(`*[_type == "other"][0].tech_stack_order`);

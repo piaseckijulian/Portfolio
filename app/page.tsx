@@ -1,4 +1,4 @@
-import { Hero, About, Projects, TechStack } from '@/components';
+import { About, Hero, Projects, TechStack } from '@/components';
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import { BsTwitter, BsGithub, BsLinkedin, BsFillEnvelopeFill } from 'react-icons/bs';
+import { BsFillEnvelopeFill, BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 export const navLinks = [
   {
