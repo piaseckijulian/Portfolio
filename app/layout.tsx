@@ -1,10 +1,10 @@
-import { Footer, Navbar } from '@/components';
+import { Footer, Header } from '@/components';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
 
 const poppins = Poppins({
-  weight: ['300', '400', '500', '700'],
+  weight: ['400', '600', '700'],
   subsets: ['latin']
 });
 
@@ -20,9 +20,9 @@ interface childrenInterface {
 
 const RootLayout = ({ children }: childrenInterface) => {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.className} dark:bg-darkClr`}>
-        <Navbar />
+    <html lang="en">
+      <body className={`${poppins.className} bg-zinc-900`}>
+        <Header />
         {children}
         <Footer />
       </body>

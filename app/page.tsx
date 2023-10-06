@@ -1,10 +1,9 @@
-import { About, Hero, Projects, TechStack } from '@/components';
+import { Hero, Projects, TechStack } from '@/components';
 
 const Home = () => {
   return (
-    <main className="px-5 md:px-10 lg:px-36">
+    <main className="xs:px-18 px-5 sm:px-28">
       <Hero />
-      <About />
       <TechStack />
       <Projects />
     </main>

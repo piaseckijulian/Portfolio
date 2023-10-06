@@ -1,8 +1,5 @@
-import About from './About';
-import Footer from './Footer';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import Projects from './Projects';
-import TechStack from './TechStack';
-
-export { About, Footer, Hero, Navbar, Projects, TechStack };
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
+export { default as Hero } from './Hero';
+export { default as Projects } from './Projects';
+export { default as TechStack } from './TechStack';

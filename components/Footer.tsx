@@ -1,25 +1,39 @@
-import { footerLinks } from '@/constants';
 import Link from 'next/link';
+import { BsGithub } from 'react-icons/bs';
+import { FaTwitter } from 'react-icons/fa';
+
+const socials = [
+  {
+    href: 'https://github.com/piaseckijulian',
+    text: 'Github',
+    icon: BsGithub
+  },
+  {
+    href: 'https://twitter.com/piaseckijulian',
+    text: 'Twitter',
+    icon: FaTwitter
+  }
+];
 
 const Footer = () => {
   return (
-    <footer className="mt-10 px-5 xs:mt-20 md:px-10 lg:px-36">
-      <div className="footer-wrapper">
-        <h3 className="gradient text-xl font-bold -tracking-[1px] xs:text-2xl">
-          Julian Piasecki
-        </h3>
+    <footer className="xs:px-18 mt-10 flex flex-col items-center justify-between px-5 py-5 text-white xs:flex-row sm:px-28">
+      <h3 className="mb-2 text-2xl font-bold max-xs:text-center xs:mb-0 xs:text-3xl">
+        Julian Piasecki
+      </h3>
 
-        <div className="flex items-center gap-6 max-xs:mt-4">
-          {footerLinks.map(({ title, href, icon: Icon }) => (
-            <Link href={href} key={href} target={title === 'Mail' ? '_self' : '_blank'}>
-              <Icon
-                className="h-4 w-4 transition duration-500 ease-in-out
-          hover:fill-purple-700 dark:fill-white xs:h-8 xs:w-8"
-              />
-              <span className="text-[0px]">{title}</span>
-            </Link>
-          ))}
-        </div>
+      <div className="flex gap-4">
+        {socials.map(({ text, href, icon: Icon }) => (
+          <Link
+            href={href}
+            key={href}
+            className="text-xl transition hover:text-red-500 xs:text-3xl"
+            target="_blank"
+            aria-label={text}
+          >
+            <Icon />
+          </Link>
+        ))}
       </div>
     </footer>
   );

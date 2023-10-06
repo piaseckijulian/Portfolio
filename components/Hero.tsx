@@ -1,29 +1,21 @@
-import Image from 'next/image';
+import Button from './Button';
 
 const Hero = () => {
   return (
-    <section className="hero-wrapper">
-      <h1 className="hero-text">
-        Hi 👋,
-        <br />
-        My name is
-        <br />
-        <span className="gradient">
-          Julian Piasecki
-          <br />
-        </span>
+    <section className="flex min-h-[90vh] flex-col items-center justify-center">
+      <h1 className="text-center text-4xl font-bold leading-tight text-white xs:text-5xl">
+        My name is <br className="hidden xs:block" />
+        <span className="text-red-500">Julian Piasecki</span>{' '}
+        <br className="hidden xs:block" />
         I'm a Full-Stack Dev
       </h1>
 
-      <div className="rounded-full bg-gradient p-2">
-        <Image
-          src="/assets/hero-photo.png"
-          alt="Photo of Julian Piasecki"
-          width={290}
-          height={290}
-          className="h-full w-full rounded-full max-lg:h-[200px] max-lg:w-[200px] max-xs:h-[150px] max-xs:w-[150px]"
-        />
-      </div>
+      <Button
+        text="My Work"
+        href="https://github.com/piaseckijulian"
+        color="red"
+        styles="mt-5"
+      />
     </section>
   );
 };
