@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { BsGithub } from 'react-icons/bs';
-import { FaTwitter } from 'react-icons/fa';
+import { RiTwitterXFill } from 'react-icons/ri';
 
 const socials = [
   {
@@ -11,7 +11,7 @@ const socials = [
   {
     href: 'https://twitter.com/piaseckijulian',
     text: 'Twitter',
-    icon: FaTwitter
+    icon: RiTwitterXFill
   }
 ];
 
