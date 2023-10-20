@@ -28,7 +28,7 @@ const ProjectCard = ({ src, title, desc, techStack, liveSiteUrl, githubUrl }: Pr
   ];
 
   return (
-    <div className="bg-neutral-900 text-white">
+    <div className="border-2 border-zinc-800 text-white">
       <Image
         src={urlFor(src).url()}
         alt={`Picture of the ${title}`}
@@ -45,7 +45,7 @@ const ProjectCard = ({ src, title, desc, techStack, liveSiteUrl, githubUrl }: Pr
 
         <p className="my-3 text-sm">Tech stack: {techStack.join(', ')}</p>
 
-        <div className="flex flex-col gap-x-6 gap-y-2 lg:flex-row">
+        <div className=" flex flex-col gap-x-6 gap-y-2 lg:flex-row">
           {links.map(({ text, href, icon: Icon }) => (
             <Link
               href={href}

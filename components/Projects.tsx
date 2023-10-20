@@ -19,7 +19,7 @@ const Projects = async () => {
         Projects
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map(({ image, title, desc, tech_stack, live_site_url, github_url }) => (
           <ProjectCard
             src={image}
