@@ -1,4 +1,4 @@
-# Portfolio - ⭐Julian Piasecki's Portfolio Website
+# Portfolio - 🚀Julian Piasecki's Portfolio Website
 
 This is my personal website when I showcase my projects and my skills
 
