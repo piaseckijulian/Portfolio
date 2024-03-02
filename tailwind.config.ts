@@ -6,13 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-  theme: {
-    extend: {
-      screens: {
-        xs: '420px'
-      }
-    }
-  },
+  theme: { extend: { screens: { xs: '420px' } } },
   plugins: []
 };
 
