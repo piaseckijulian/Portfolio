@@ -1,17 +1,18 @@
-import client, { ImageInterface } from '@/sanityClient';
+import { client } from '@/sanity/lib/client';
+import { type Image } from 'sanity';
 import ProjectCard from './ProjectCard';
 
-interface ProjectInterface {
-  image: ImageInterface;
+interface Project {
   title: string;
   desc: string;
-  tech_stack: string[];
-  live_site_url: string;
-  github_url: string;
+  image: Image;
+  techStack: string[];
+  liveSiteUrl: string;
+  githubUrl: string;
 }
 
 const Projects = async () => {
-  const projects: ProjectInterface[] = await client.fetch(`*[_type == "project"]`);
+  const projects: Project[] = await client.fetch('*[_type == "project"]');
 
   return (
     <section>
@@ -20,14 +21,14 @@ const Projects = async () => {
       </h2>
 
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map(({ image, title, desc, tech_stack, live_site_url, github_url }) => (
+        {projects.map(({ image, title, desc, techStack, liveSiteUrl, githubUrl }) => (
           <ProjectCard
-            src={image}
             title={title}
             desc={desc}
-            techStack={tech_stack}
-            liveSiteUrl={live_site_url}
-            githubUrl={github_url}
+            image={image}
+            techStack={techStack}
+            liveSiteUrl={liveSiteUrl}
+            githubUrl={githubUrl}
             key={title}
           />
         ))}

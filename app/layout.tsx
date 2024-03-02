@@ -1,6 +1,6 @@
-import { Footer, Header } from '@/components';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import type { PropsWithChildren } from 'react';
 import './globals.css';
 
 const poppins = Poppins({
@@ -11,21 +11,13 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Julian Piasecki's Portfolio",
   description:
-    "This is Julian Piasecki's personal website where he showcases his projects and skills"
+    "This is Julian Piasecki's personal website where he showcases his projects and skills."
 };
 
-interface childrenInterface {
-  children: React.ReactNode;
-}
-
-const RootLayout = ({ children }: childrenInterface) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-zinc-900`}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body className={`${poppins.className} bg-zinc-900`}>{children}</body>
     </html>
   );
 };

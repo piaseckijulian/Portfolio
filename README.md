@@ -1,21 +1,39 @@
-# Portfolio - 🚀Julian Piasecki's Portfolio Website
+# 🚀 Portfolio
 
-This is my personal website when I showcase my projects and my skills
+![GitHub Repo stars](https://img.shields.io/github/stars/piaseckijulian/Portfolio?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/piaseckijulian/Portfolio?style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/piaseckijulian/Portfolio?style=for-the-badge)
 
-# Image
+This is Julian Piasecki's personal website where he showcases his projects and skills. 🚀
 
-<img src="./images/screenshot.png" alt="Image of Julian Piasecki's Portfolio Website" align="center" />
+<img src="./images/image.png" alt="Image of Portfolio" width="800" height="400" />
 
-<br />
+## 🔗 Links
 
-# About
+- [Live Demo](https://julian-portfolio.vercel.app)
 
-I built this project with:
+## 📐 Tech Stack
 
-- [Next.js](https://www.npmjs.com/package/next)
-- [Typescript](https://www.npmjs.com/package/typescript)
-- [Tailwind CSS](https://www.npmjs.com/package/tailwindcss)
-- [Sanity](https://www.npmjs.com/package/sanity)
-- [React Icons](https://www.npmjs.com/package/react-icons)
+- Next.js
+- Typescript
+- Sanity
+- Tailwind CSS
+- React Icons
 
-# [Live Demo](https://julian-portfolio.vercel.app)
+## ✨ Usage
+
+```bash
+git clone https://github.com/piaseckijulian/Portfolio.git
+cd Portfolio
+pnpm dev
+```
+
+Next, duplicate the .env.example file, rename the duplicate to .env, and then input your environmental variables there.
+
+Then, go to `/studio` page of your Portfolio and add your data.
+
+That's it! - You're good to go. You can add new features, fix bugs etc.
+
+## 🌐 Contribution
+
+If you want to contribute to this amazing project simply raise an **Issue** when you found a bug or you are requesting a new feature. However if you want to do it yourself create a **Pull Request**.
