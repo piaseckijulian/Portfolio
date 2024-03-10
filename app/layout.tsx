@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import type { PropsWithChildren } from 'react';
@@ -11,13 +13,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Julian Piasecki's Portfolio",
   description:
-    "This is Julian Piasecki's personal website where he showcases his projects and skills."
+    "Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology."
 };
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-zinc-900`}>{children}</body>
+      <body className={`${poppins.className} bg-zinc-900`}>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 };
