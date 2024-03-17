@@ -1,7 +1,7 @@
 import { socials } from '@/lib/constants';
 import Button from './Button';
 
-const Hero = async () => {
+const Hero = () => {
   return (
     <section className="flex min-h-[90vh] flex-col items-center justify-center">
       <h1 className="text-center text-4xl font-bold leading-tight text-white xs:text-5xl">
