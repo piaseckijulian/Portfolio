@@ -6,7 +6,7 @@
 
 Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology. 🚀
 
-<img src="./images/image.png" alt="Image of Portfolio" width="800" height="400" />
+<img src="./public/thumbnail.png" alt="Image of Portfolio" width="800" height="400" />
 
 ## 🔗 Links
 

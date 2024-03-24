@@ -1,4 +1,4 @@
-import { sortTechStackItems } from '@/lib';
+import { sortTechStackItems } from '@/lib/sortTechStackItems';
 import { urlForImage } from '@/sanity/lib/image';
 import Image from 'next/image';
 

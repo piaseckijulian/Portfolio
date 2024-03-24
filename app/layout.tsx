@@ -1,3 +1,4 @@
+import { createMetadata } from '@/lib/utils';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { type Metadata } from 'next';
@@ -10,11 +11,12 @@ const poppins = Poppins({
   subsets: ['latin']
 });
 
-export const metadata: Metadata = {
-  title: "Julian Piasecki's Portfolio",
-  description:
-    "Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology."
-};
+export const metadata: Metadata = createMetadata(
+  "Julian Piasecki's Portfolio",
+  "Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology.",
+  '/thumbnail.png',
+  new URL('https://julian-portfolio.vercel.app')
+);
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
