@@ -8,6 +8,7 @@ Explore Julian Piasecki's personal website to discover an impressive showcase of
 
 <img src="./public/thumbnail.png" alt="Image of Portfolio" width="800" height="400" />
 
+
 ## 🔗 Links
 
 - [Live Demo](https://julian-portfolio.vercel.app)
