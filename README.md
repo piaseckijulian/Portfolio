@@ -15,7 +15,7 @@ Explore Julian Piasecki's personal website to discover an impressive showcase of
 ## 📐 Tech Stack
 
 - Next.js
-- Typescript
+- TypeScript
 - Sanity
 - Tailwind CSS
 - React Icons
