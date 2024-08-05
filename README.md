@@ -28,7 +28,7 @@ cd Portfolio
 pnpm dev
 ```
 
-Next, duplicate the `!.env.example` file, rename the duplicate to `.env`, and then input your environmental variables there.
+Next, duplicate the `.env.example` file, rename the duplicate to `.env`, and then input your environmental variables there.
 
 Then, go to `/studio` page of your Portfolio and add your data.
 
