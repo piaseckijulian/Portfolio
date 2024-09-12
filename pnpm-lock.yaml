@@ -65,7 +65,7 @@ importers:
         version: 14.2.9(eslint@8.57.0)(typescript@5.6.2)
       husky:
         specifier: ^9.0.11
-        version: 9.1.5
+        version: 9.1.6
       postcss:
         specifier: ^8.4.38
         version: 8.4.45
@@ -3098,8 +3098,8 @@ packages:
   humanize-list@1.0.1:
     resolution: {integrity: sha512-4+p3fCRF21oUqxhK0yZ6yaSP/H5/wZumc7q1fH99RkW7Q13aAxDeP78BKjoR+6y+kaHqKF/JWuQhsNuuI2NKtA==}
 
-  husky@9.1.5:
-    resolution: {integrity: sha512-rowAVRUBfI0b4+niA4SJMhfQwc107VLkBUgEYYAOQAbqDCnra1nYh83hF/MDmhYs9t9n1E3DuKOrs2LYNC+0Ag==}
+  husky@9.1.6:
+    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -8844,7 +8844,7 @@ snapshots:
 
   humanize-list@1.0.1: {}
 
-  husky@9.1.5: {}
+  husky@9.1.6: {}
 
   i18next@23.15.1:
     dependencies:
