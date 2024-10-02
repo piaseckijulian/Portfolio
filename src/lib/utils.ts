@@ -1,10 +1,10 @@
-import { type Metadata } from 'next';
+import type { Metadata } from "next"
 
 export const createMetadata = (
   title: string,
   description: string,
   image: string,
-  url: URL
+  url: URL,
 ): Metadata => ({
   title,
   description,
@@ -13,15 +13,15 @@ export const createMetadata = (
     description,
     images: [{ url: image }],
     url,
-    siteName: title
+    siteName: title,
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title,
     description,
     images: [image],
-    creator: '@piaseckijulian'
+    creator: "@piaseckijulian",
   },
-  icons: ['/favicon.ico'],
-  metadataBase: url
-});
+  icons: ["/favicon.ico"],
+  metadataBase: url,
+})

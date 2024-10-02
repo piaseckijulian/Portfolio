@@ -1,10 +1,10 @@
-import { socials } from '@/lib/constants';
-import Link from 'next/link';
+import { socials } from "@/lib/constants"
+import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="xs:px-18 mt-10 flex flex-col items-center justify-between px-5 py-5 text-white xs:flex-row sm:px-28">
-      <h3 className="mb-2 text-2xl font-bold text-white max-xs:text-center xs:mb-0 xs:text-3xl">
+    <footer className="mt-10 flex xs:flex-row flex-col items-center justify-between px-5 xs:px-18 py-5 text-white sm:px-28">
+      <h3 className="mb-2 xs:mb-0 font-bold text-2xl text-white xs:text-3xl max-xs:text-center">
         Julian Piasecki
       </h3>
 
@@ -13,7 +13,7 @@ const Footer = () => {
           <Link
             href={href}
             key={href}
-            className="text-xl transition hover:text-red-500 xs:text-3xl"
+            className="text-xl xs:text-3xl transition hover:text-red-500"
             target="_blank"
             aria-label={text}
           >
@@ -22,7 +22,7 @@ const Footer = () => {
         ))}
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

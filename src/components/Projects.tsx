@@ -1,22 +1,22 @@
-import { client } from '@/sanity/lib/client';
-import { type Image } from 'sanity';
-import ProjectCard from './ProjectCard';
+import { client } from "@/sanity/lib/client"
+import type { Image } from "sanity"
+import ProjectCard from "./ProjectCard"
 
 interface Project {
-  title: string;
-  desc: string;
-  image: Image;
-  techStack: string[];
-  liveSiteUrl: string;
-  githubUrl: string;
+  title: string
+  desc: string
+  image: Image
+  techStack: string[]
+  liveSiteUrl: string
+  githubUrl: string
 }
 
 const Projects = async () => {
-  const projects: Project[] = await client.fetch('*[_type == "project"]');
+  const projects: Project[] = await client.fetch('*[_type == "project"]')
 
   return (
     <section>
-      <h2 className="mb-10 text-center text-4xl font-bold text-white xs:text-5xl">
+      <h2 className="mb-10 text-center font-bold text-4xl text-white xs:text-5xl">
         Projects
       </h2>
 
@@ -32,11 +32,11 @@ const Projects = async () => {
               githubUrl={githubUrl}
               key={title}
             />
-          )
+          ),
         )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

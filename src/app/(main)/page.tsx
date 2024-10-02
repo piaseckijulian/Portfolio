@@ -1,4 +1,4 @@
-import { Hero, Projects, TechStack } from '@/components';
+import { Hero, Projects, TechStack } from "@/components"
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <TechStack />
       <Projects />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

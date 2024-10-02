@@ -1,10 +1,10 @@
-import { socials } from '@/lib/constants';
-import Button from './Button';
+import { socials } from "@/lib/constants"
+import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="xs:px-18 flex items-center justify-center bg-red-500 px-5 py-4 text-white xs:justify-between sm:px-28">
-      <h3 className="text-center text-3xl font-bold xs:text-left">
+    <nav className="flex items-center justify-center xs:justify-between bg-red-500 px-5 xs:px-18 py-4 text-white sm:px-28">
+      <h3 className="xs:text-left text-center font-bold text-3xl">
         Julian Piasecki
       </h3>
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         styles="max-xs:hidden"
       />
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

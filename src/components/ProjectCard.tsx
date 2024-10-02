@@ -1,17 +1,17 @@
-import { urlForImage } from '@/sanity/lib/image';
-import Image from 'next/image';
-import Link from 'next/link';
-import { AiOutlinePaperClip } from 'react-icons/ai';
-import { BsGithub } from 'react-icons/bs';
-import { type Image as ImageType } from 'sanity';
+import { urlForImage } from "@/sanity/lib/image"
+import Image from "next/image"
+import Link from "next/link"
+import { AiOutlinePaperClip } from "react-icons/ai"
+import { BsGithub } from "react-icons/bs"
+import type { Image as ImageType } from "sanity"
 
 interface Props {
-  title: string;
-  desc: string;
-  image: ImageType;
-  techStack: string[];
-  githubUrl: string;
-  liveSiteUrl: string;
+  title: string
+  desc: string
+  image: ImageType
+  techStack: string[]
+  githubUrl: string
+  liveSiteUrl: string
 }
 
 const ProjectCard = ({
@@ -20,12 +20,12 @@ const ProjectCard = ({
   image,
   techStack,
   liveSiteUrl,
-  githubUrl
+  githubUrl,
 }: Props) => {
   const links = [
-    { href: liveSiteUrl, text: 'Demo', icon: AiOutlinePaperClip },
-    { href: githubUrl, text: 'Github', icon: BsGithub }
-  ];
+    { href: liveSiteUrl, text: "Demo", icon: AiOutlinePaperClip },
+    { href: githubUrl, text: "Github", icon: BsGithub },
+  ]
 
   return (
     <div className="flex flex-col border-2 border-zinc-800 text-white">
@@ -38,13 +38,13 @@ const ProjectCard = ({
       />
 
       <div className="my-5 flex h-full w-full flex-col gap-3 px-5">
-        <h3 className="text-center text-2xl font-semibold xs:text-3xl lg:text-4xl">
+        <h3 className="text-center font-semibold text-2xl xs:text-3xl lg:text-4xl">
           {title}
         </h3>
 
         <p className="flex-1 xs:text-left xs:text-lg">{desc}</p>
 
-        <p className="text-sm">Tech stack: {techStack.join(', ')}</p>
+        <p className="text-sm">Tech stack: {techStack.join(", ")}</p>
 
         <div className="flex flex-col gap-x-6 gap-y-2 lg:flex-row">
           {links.map(({ text, href, icon: Icon }) => (
@@ -63,7 +63,7 @@ const ProjectCard = ({
 
       {/* </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

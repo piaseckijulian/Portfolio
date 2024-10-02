@@ -2,8 +2,8 @@
 const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
-    remotePatterns: [{ protocol: 'https', hostname: 'cdn.sanity.io' }]
-  }
-};
+    remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+  },
+}
 
-export default nextConfig;
+export default nextConfig
