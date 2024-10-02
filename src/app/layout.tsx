@@ -11,12 +11,7 @@ const poppins = Poppins({
   subsets: ["latin"],
 })
 
-export const metadata: Metadata = createMetadata(
-  "Julian Piasecki's Portfolio",
-  "Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology.",
-  "/thumbnail.png",
-  new URL("https://julian-portfolio.vercel.app"),
-)
+export const metadata: Metadata = createMetadata()
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
