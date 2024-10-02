@@ -4,7 +4,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/piaseckijulian/Portfolio?style=for-the-badge)
 ![GitHub watchers](https://img.shields.io/github/watchers/piaseckijulian/Portfolio?style=for-the-badge)
 
-Explore Julian Piasecki's personal website to discover an impressive showcase of his diverse programming projects and exceptional skills in the world of technology. 🚀
+Julian Piasecki’s portfolio showcases his software engineering work, projects, and technical skills with a simple, clear design. 🚀
 
 <img src="./public/thumbnail.png" alt="Image of Portfolio" width="800" height="400" />
 
