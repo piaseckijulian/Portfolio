@@ -25,7 +25,7 @@ importers:
         version: 15.0.0(@babel/core@7.25.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-sanity:
         specifier: ^9.0.6
-        version: 9.6.0(@sanity/client@6.22.1)(@sanity/icons@3.4.0(react@18.3.1))(@sanity/types@3.61.0)(@sanity/ui@2.8.9(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@15.0.0(@babel/core@7.25.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sanity@3.61.0(@types/node@20.16.14)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+        version: 9.7.0(@sanity/client@6.22.1)(@sanity/icons@3.4.0(react@18.3.1))(@sanity/types@3.61.0)(@sanity/ui@2.8.9(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@15.0.0(@babel/core@7.25.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sanity@3.61.0(@types/node@20.16.14)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -3227,8 +3227,8 @@ packages:
     engines: {node: ^18 || >=20}
     hasBin: true
 
-  next-sanity@9.6.0:
-    resolution: {integrity: sha512-s9nr5BfZiJRQyzY7zIxGxwLuPLzgPmdSy+ExoWmP8EYmLVnZfeGEPKllKr2d182/BexEySrwbsZGnW5fbX9fTw==}
+  next-sanity@9.7.0:
+    resolution: {integrity: sha512-SU6bwbBTSli3Zv8peGMYQ+HRjVZ1ShbCsXWPp8fRS90dw4qPGMjQMACNXPwvRjcELTEeuSZqAFeFZPgbSRCc7Q==}
     engines: {node: '>=18.18'}
     peerDependencies:
       '@sanity/client': ^6.22.2
@@ -7920,7 +7920,7 @@ snapshots:
 
   nanoid@5.0.7: {}
 
-  next-sanity@9.6.0(@sanity/client@6.22.1)(@sanity/icons@3.4.0(react@18.3.1))(@sanity/types@3.61.0)(@sanity/ui@2.8.9(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@15.0.0(@babel/core@7.25.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sanity@3.61.0(@types/node@20.16.14)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+  next-sanity@9.7.0(@sanity/client@6.22.1)(@sanity/icons@3.4.0(react@18.3.1))(@sanity/types@3.61.0)(@sanity/ui@2.8.9(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(next@15.0.0(@babel/core@7.25.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sanity@3.61.0(@types/node@20.16.14)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
     dependencies:
       '@portabletext/react': 3.1.0(react@18.3.1)
       '@sanity/client': 6.22.1(debug@4.3.7)
