@@ -18,8 +18,8 @@
     "@vercel/speed-insights": "^1.0.10",
     "next": "^15.0.0",
     "next-sanity": "^9.0.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "19.0.0-rc-45804af1-20241021",
+    "react-dom": "19.0.0-rc-45804af1-20241021",
     "sanity": "^3.38.0",
     "styled-components": "^6.1.8"
   },
